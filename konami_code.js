@@ -1,6 +1,6 @@
 const main = document.body;
 
-main.addEventListener('keydown', function(event) {
+main.addEventListener('keydown', init(event) {
   alert('I was clicked!');
 });
 
