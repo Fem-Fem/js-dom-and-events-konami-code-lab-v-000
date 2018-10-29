@@ -6,10 +6,9 @@ main.addEventListener('keydown', function(event) {
 
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
-let index = 0;
 
 function init(event) {
-  // Write your JavaScript code inside the init() function
+  let index = 0;
   const key = parseInt(event.detail || event.which);
 
   if (key === code[index]) {
