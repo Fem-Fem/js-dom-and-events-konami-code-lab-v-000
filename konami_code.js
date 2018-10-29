@@ -3,7 +3,7 @@
 // function init() {
 //   let index = 0;
 //
-//   document.body.addEventListener(('keydown', function(event) {
+//   document.body.addEventListener('keydown', function(event) {
 //     const key = parseInt(event.detail || event.which);
 //
 //     if (key === code[index]) {
