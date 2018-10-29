@@ -25,6 +25,7 @@ function init(event) {
   }
 }
 
+init();
 // function onKeyDownHandler(e) {
 //   const key = parseInt(e.detail || e.which);
 //
