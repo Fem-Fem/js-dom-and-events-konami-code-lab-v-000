@@ -1,7 +1,4 @@
-const main = document.body;
-
-main.addEventListener('keydown', function(event) {
-  init(event);
+document.body.addEventListener('keydown', function(event) {
 });
 
 const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
@@ -9,7 +6,9 @@ const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
 
 function init(event) {
   let index = 0;
-  const key = parseInt(event.detail || event.which);
+
+  document.body.addEventListener('keydown', function(event) {
+    const key = parseInt(event.detail || event.which);
 
   if (key === code[index]) {
     index++;
@@ -25,18 +24,3 @@ function init(event) {
 }
 
 init();
-// function onKeyDownHandler(e) {
-//   const key = parseInt(e.detail || e.which);
-//
-//   if (key === alphabet[index]) {
-//     index++;
-//
-//     if (index === alphabet.length) {
-//       alert("Hurray!");
-//
-//       index = 0;
-//     }
-//   } else {
-//     index = 0;
-//   }
-// }
